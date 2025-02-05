@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+    <!-- head.html -->
+    <!-- meta.html -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Nostalgia Reading List for Beginners on AI Security | Xudong Pan 潘旭东</title>
+    <meta name="author" content="Xudong Pan">
+    <meta name="description" content="Missing the innocent time but we must move forward for bigger challenges" >
+    <meta name="keywords" content="AI Security,Reading List" >
+    <link rel="canonical" href="https://ravensanstete.github.io/en/post/classical_ai_security/" >
+    
+    
+        <!-- _meta.html -->
+
+<meta property="og:url" content="https://ravensanstete.github.io/en/post/classical_ai_security/">
+    <meta property="og:site_name" content="Xudong Pan 潘旭东">
+    <meta property="og:title" content="A Nostalgia Reading List for Beginners on AI Security | Xudong Pan 潘旭东">
+    <meta name="twitter:title" content="A Nostalgia Reading List for Beginners on AI Security | Xudong Pan 潘旭东">
+    <meta property="og:description" content="Missing the innocent time but we must move forward for bigger challenges">
+    <meta name="twitter:description" content="Missing the innocent time but we must move forward for bigger challenges">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-12-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-24T00:00:00+00:00">
+    <meta property="article:tag" content="AI Security,Reading List">
+  <meta name="twitter:card" content="summary">
+
+
+
+
+    <!-- js.html --><script src="https://ravensanstete.github.io/js/hugo-brewm.min.js"
+            integrity="sha384-BR7s6qvZPiCXM1vGhjcyhXHvp0tbNwcfJS2bNu&#43;ppFV/31NCM&#43;t5efa8ww3AV/&#43;r" crossorigin="anonymous"
+            defer></script><!-- css.html -->
+        <link rel="stylesheet" href="https://ravensanstete.github.io/css/hugo-brewm.min.css" integrity="sha256-ea0hUVuOzb7ZcT0bVvNAz4ttJ4Kz6BqXS79qNvvBWEI=" crossorigin="anonymous">
+    <style>body {max-width: 786px; margin: auto; padding: 2rem;}img {max-width: 86vw;}</style>
+    
+    <!-- js/fediverse.html -->
+    
+</head>
+<body  id="post" >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true"></div>
+    
+    <nav aria-label="Bypass Navigation">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="https://ravensanstete.github.io/en/" aria-label="Xudong Pan 潘旭东">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="560pt">
+            <text id="logotype__text" y="19.5pt" x="0">Xudong Pan 潘旭东</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top Nav">
+            <!-- menu.html -->
+<details id="has-main-menu" class="presentation" open>
+    <summary  class="hide"  aria-label="Main Menu">
+        <span>Main Menu</span>
+    </summary>
+        
+        <nav id="main-menu" aria-label="Main Menu">
+            <ul class="l1 " role="presentation" tabindex="-1" >
+                
+    
+        <li role="presentation">
+    <a   class=on-deck href=https://ravensanstete.github.io/en/
+        >
+        
+            <span>Home</span>
+    </a>
+        </li>
+        <li role="presentation">
+    <a   class=on-deck href=https://ravensanstete.github.io/en/publications/
+        >
+        
+            <span>Publications</span>
+    </a>
+        </li>
+        <li role="presentation">
+    <a   aria-current=true class=on-deck href=https://ravensanstete.github.io/en/post/
+        >
+        
+            <span>Blogs</span>
+    </a>
+        </li>
+            </ul>
+        </nav>
+</details>
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2">Search</span>
+        <kbd class="key" style="display: none;">q</kbd>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="https://ravensanstete.github.io/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="hasDuckDuckGo" class="on-hull">
+            
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="[i18n] searchDuckDuckGo">
+        <input type="hidden" value="ravensanstete.github.io" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+            <!-- menu.html -->
+    <menu role="presentation">
+        <li>
+            <a id="print-button" class="hide" href="javascript:window.print()" title="Print" role="button" aria-label="Print">
+                <span class="t" role="tooltip">Print</span>
+            </a>
+        </li>
+        <li>
+            <a id="navigatorShare" href="#share" title="Share" role="button" aria-label="Share">
+                <span class="t" role="tooltip">Share</span>
+            </a>
+        </li>
+        <li>
+            <a id="copyPermalink" class="hide" href="javascript:navigator.clipboard.writeText(window.location.href)" title="Copy Url" role="button" aria-label="Copy Url">
+                <span class="t" role="tooltip">Copy Url</span>
+            </a>
+        </li>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb">
+                    <!-- breadcrumb.html -->
+        <li>
+            <a href="https://ravensanstete.github.io/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">A Nostalgia Reading List for Beginners on AI Security
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth"
+        role="document" aria-labelledby="title"
+            data-pagefind-body>
+        
+        <header class="textwidth" aria-labelledby="title">
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                    data-pagefind-meta="title"
+                >A Nostalgia Reading List for Beginners on AI Security</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">Missing the innocent time but we must move forward for bigger challenges</p>
+        </hgroup>
+            <div id="doc-author" class="textsw author">
+                
+                    <span>Xudong Pan</span>
+            </div>
+            <!-- timestamp.html-->
+    <div >
+        <time class="doc-publish-date" datetime="2024-12-24T00:00:00&#43;00:00" data-time-label="Published on">December 24, 2024</time>
+    </div>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <h1 id="a-nostalgia-reading-list-for-beginners-on-ai-security">A Nostalgia Reading List for Beginners on AI Security</h1>
+<ul>
+<li>
+<ol>
+<li><a href="https://ravensanstete.github.io/en/post/classical_ai_security/#AdversarialAttacks">Adversarial Attacks</a></li>
+</ol>
+<ul>
+<li>1.1. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#AdversarialExamplesAEDefenses">Adversarial Examples (AE) &amp; Defenses</a></li>
+<li>1.2. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#BackdoorAttacksDefenses"><strong>Backdoor Attacks &amp; Defenses</strong></a></li>
+<li>1.3. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#PoisoningAttacks">Poisoning Attacks</a></li>
+<li>1.4. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#ByzantineAttacks">Byzantine Attacks</a></li>
+</ul>
+</li>
+<li>
+<ol start="2">
+<li><a href="https://ravensanstete.github.io/en/post/classical_ai_security/#PrivacyAttacks">Privacy Attacks</a></li>
+</ol>
+<ul>
+<li>2.1. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#MembershipInference">Membership Inference</a></li>
+<li>2.2. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#PropertyInference">Property Inference</a></li>
+<li>2.3. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#DataReconstruction">Data Reconstruction</a></li>
+<li>2.4. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#ModelExtractionStealing">Model Extraction/Stealing</a></li>
+</ul>
+</li>
+<li>
+<ol start="3">
+<li><a href="https://ravensanstete.github.io/en/post/classical_ai_security/#CopyrightProtection">Copyright Protection</a></li>
+</ol>
+<ul>
+<li>3.1. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#ModelWatermarking">Model Watermarking</a></li>
+<li>3.2. <a href="https://ravensanstete.github.io/en/post/classical_ai_security/#ModelFingerprinting">Model Fingerprinting</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-a-nameadversarialattacksaadversarial-attacks">1. <a name='AdversarialAttacks'></a>Adversarial Attacks</h2>
+<h3 id="11-a-nameadversarialexamplesaedefensesaadversarial-examples-ae--defenses">1.1. <a name='AdversarialExamplesAEDefenses'></a>Adversarial Examples (AE) &amp; Defenses</h3>
+<h4 id="111-a-namesurveyasurvey">1.1.1. <a name='Survey'></a><strong>Survey</strong></h4>
+<ul>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0031320318302565">Wild patterns: Ten years after the rise of adversarial machine learning</a>（Surveying AI Security research before 2018, mainly on adversarial examples and poisoning attacks）</li>
+</ul>
+<h4 id="112-a-nameattacksideaattack-side">1.1.2. <a name='AttackSide'></a><strong>Attack Side</strong></h4>
+<ul>
+<li><a href="https://arxiv.org/abs/1412.6572">FGSM</a> （the first AE）</li>
+<li><a href="https://arxiv.org/abs/1607.02533v1">PGD</a> （the first iterative AE generation algorithm）</li>
+<li>[C&amp;W]<a href="https://ieeexplore.ieee.org/abstract/document/7958570">https://ieeexplore.ieee.org/abstract/document/7958570</a> （systematization）</li>
+<li><a href="https://www.ndss-symposium.org/ndss-paper/textbugger-generating-adversarial-text-against-real-world-applications/">TextBugger</a>（AE on NLP models）</li>
+<li><a href="https://arxiv.org/abs/2110.09714">Black-box Adversarial Attacks on Commercial Speech Platforms with Minimal Information</a> (AE on audio models）</li>
+</ul>
+<h4 id="113-a-nameempiricaldefenseaempirical-defense">1.1.3. <a name='EmpiricalDefense'></a><strong>Empirical Defense</strong></h4>
+<ul>
+<li><a href="https://arxiv.org/abs/1705.09064">MagNet: a Two-Pronged Defense against Adversarial Examples</a> (CCS’17，manifold-based, unsupervised)</li>
+<li><a href="http://proceedings.mlr.press/v80/athalye18a.html">Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples</a> (ICML’18 Best Paper，which surveys the defenses before 2018 and BREAKS them)</li>
+</ul>
+<h4 id="114-a-namecertifieddefenseacertified-defense">1.1.4. <a name='CertifiedDefense'></a><strong>Certified Defense</strong></h4>
+<ul>
+<li><a href="https://sokcertifiedrobustness.github.io/">SoK: Certified Robustness for Deep Neural Networks</a>（a survey）</li>
+<li><a href="https://proceedings.mlr.press/v97/cohen19c.html">Certified Adversarial Robustness via Randomized Smoothing</a> （ICML‘19，an early work on randomized smoothing）</li>
+<li><a href="https://files.sri.inf.ethz.ch/website/papers/sp2018.pdf">AI2: Safety and Robustness Certification of Neural Networks with Abstract Interpretation</a>（S&amp;P’18，deterministic certification based on ideas from program verification）</li>
+</ul>
+<h3 id="12-a-namebackdoorattacksdefensesabackdoor-attacks--defenses">1.2. <a name='BackdoorAttacksDefenses'></a><strong>Backdoor Attacks &amp; Defenses</strong></h3>
+<h4 id="121-a-namesurvey-1asurvey">1.2.1. <a name='Survey-1'></a><strong>Survey</strong></h4>
+<ul>
+<li><a href="https://arxiv.org/abs/2012.09302">TrojanZoo</a> (huge engineering efforts with an open-sourced framework）</li>
+</ul>
+<h4 id="122-a-nameattackside-1aattack-side">1.2.2. <a name='AttackSide-1'></a><strong>Attack Side</strong></h4>
+<ul>
+<li><a href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=2782&context=cstech">TrojanNN</a> (NDSS’17，neuron-based injection)</li>
+<li><a href="https://arxiv.org/abs/1708.06733">BadNet</a> (IEEE Access，data-based injection, classic)</li>
+<li><a href="https://people.cs.uchicago.edu/~ravenben/publications/pdf/pbackdoor-ccs19.pdf">Latent Backdoor</a> (CCS’19，extending the backdoor attack to pretrained encoders, via feature alignment)</li>
+<li><a href="https://proceedings.neurips.cc/paper/2020/file/234e691320c0ad5b45ee3c96d0d7b8f8-Paper.pdf">Input-Aware Backdoor</a>(NeurIPS‘20，the first dynamic trigger backdoor)</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/pan-hidden">Hidden Trigger Backdoor Attack on NLP Models via Linguistic Style Manipulation</a> （Security‘22，the first dynamic backdoor on NLP models, including, Ours）</li>
+<li><a href="https://ieeexplore.ieee.org/document/9835394">Towards Backdoor Attack on Deep Learning based Time Series Classification</a> (ICDE’22，the first effective backdoor attack on time series models，Ours)</li>
+</ul>
+<h4 id="123-a-namedefensesideadefense-side">1.2.3. <a name='DefenseSide'></a><strong>Defense Side</strong></h4>
+<ul>
+<li><a href="https://messlab.moyix.net/papers/finepruning_raid18.pdf">Fine-pruning</a> (RAID’18，literally, pruning and finetuning, based on the hypotheized differences in activation patterns)</li>
+<li><a href="https://arxiv.org/abs/1902.06531">STRIP</a> (ACSAC’19，detection, based on the hypothesis that triggered input is resilient to noise)</li>
+<li><a href="https://ieeexplore.ieee.org/document/8835365">Neural Cleanse</a> (S&amp;P‘19，strong link between backdoor behavior, i.e., misclassification, and static trigger pattern)</li>
+<li><a href="https://www.cs.purdue.edu/homes/taog/docs/CCS19.pdf">ABS</a> (CCS’19，neuron-level inspection)</li>
+</ul>
+<h3 id="13-a-namepoisoningattacksapoisoning-attacks">1.3. <a name='PoisoningAttacks'></a>Poisoning Attacks</h3>
+<h4 id="131-a-nameclean-labelattacksaclean-label-attacks">1.3.1. <a name='Clean-LabelAttacks'></a>Clean-Label Attacks</h4>
+<ul>
+<li><a href="https://dl.acm.org/doi/10.5555/3327345.3327509">Poison Frogs! Targeted Clean-Label Poisoning Attacks on Neural Networks</a>（NIPS‘18，present the idea of clean-label attack, feature-level alignment）</li>
+<li><a href="https://sites.cs.ucsb.edu/~vigna/publications/2021_EuroSP_Bullseye.pdf">Bullseye Polytope</a>(EuroS&amp;P’21，enhancing the attack effectiveness of the above work from a geometric view, simple yet effective)</li>
+<li><a href="https://arxiv.org/abs/1912.02771">Label-consistent backdoor attack</a> (another approach towards clean-label attack)</li>
+</ul>
+<h3 id="14-a-namebyzantineattacksabyzantine-attacks">1.4. <a name='ByzantineAttacks'></a>Byzantine Attacks</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/1802.07927">The Hidden Vulnerability of Distributed Learning in Byzantium (Krum)</a> (NIPS'17, Statistics-based defense)</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity20/presentation/pan">Justinian&rsquo;s GAAvernor: Robust Distributed Learning with Gradient Aggregation Agent</a>  (Security’20, RL-based defense, Ours)</li>
+</ul>
+<hr>
+<h2 id="2-a-nameprivacyattacksaprivacy-attacks">2. <a name='PrivacyAttacks'></a>Privacy Attacks</h2>
+<h3 id="21-a-namemembershipinferenceamembership-inference">2.1. <a name='MembershipInference'></a>Membership Inference</h3>
+<h4 id="211-a-namesurvey-1asurvey">2.1.1. <a name='Survey-1'></a>Survey</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/2103.07853v2">Membership Inference Attacks on Machine Learning: A Surve</a> (ACM Computing Surveys)</li>
+</ul>
+<h4 id="212-a-nameattackside-1aattack-side">2.1.2. <a name='AttackSide-1'></a>Attack Side</h4>
+<ul>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/7958568">Membership Inference Attacks against Machine Learning Models</a> (S&amp;P‘17, the earliest MIA)</li>
+<li><a href="https://arxiv.org/abs/1806.01246">ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models</a> (NDSS‘18，a minimalist)</li>
+</ul>
+<h4 id="213-a-namedefenseside-1adefense-side">2.1.3. <a name='DefenseSide-1'></a>Defense Side</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/1909.10594">MemGuard: Defending against Black-Box Membership Inference Attacks via Adversarial Examples</a> (CCS‘19，defense by logit-level obfuscation)</li>
+</ul>
+<h3 id="22-a-namepropertyinferenceaproperty-inference">2.2. <a name='PropertyInference'></a>Property Inference</h3>
+<h4 id="221-a-nameglobalpropertyaglobal-property">2.2.1. <a name='GlobalProperty'></a>Global Property</h4>
+<ul>
+<li><a href="https://dl.acm.org/doi/pdf/10.1145/3243734.3243834">https://dl.acm.org/doi/pdf/10.1145/3243734.3243834</a> (CCS'18, Inference based on the model weights)</li>
+</ul>
+<h4 id="222-a-nameindividualpropertyaindividual-property">2.2.2. <a name='IndividualProperty'></a>Individual Property</h4>
+<ul>
+<li><a href="https://www.cs.cornell.edu/~shmat/shmat_oak19.pdf">Exploiting Unintended Feature Leakage in Collaborative Learning</a> (S&amp;P'19, feature inference based on the embedding or gradient in federated learning scenarios)</li>
+<li><a href="https://ieeexplore.ieee.org/document/9152761">Privacy risks of general-purpose language models</a> (S&amp;P’20, reconstructing the privacy semantics from the text embeddings of LLMs，Ours)</li>
+</ul>
+<h3 id="23-a-namedatareconstructionadata-reconstruction">2.3. <a name='DataReconstruction'></a>Data Reconstruction</h3>
+<h4 id="231-a-namegradient-basedagradient-based">2.3.1. <a name='Gradient-Based'></a>Gradient-Based</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/1906.08935">Deep Leakage from Gradients</a> （DLG，NeurIPS‘19，the earliest）</li>
+<li><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Yin_See_Through_Gradients_Image_Batch_Recovery_via_GradInversion_CVPR_2021_paper.pdf">GradInversion</a> (CVPR’21，incorporate data priors into the reconstruction)</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/pan-exploring">Exploring the Security Boundary of Data Reconstruction via Neuron Exclusivity Analysis</a> (Security‘22，equation-solving-based reconstruction, pixel-level reconstruction, Ours)</li>
+</ul>
+<h4 id="232-a-nameweight-basedaweight-based">2.3.2. <a name='Weight-Based'></a>Weight-Based</h4>
+<ul>
+<li><a href="https://www.cs.cmu.edu/~mfredrik/papers/fjr2015ccs.pdf">Model Inversion Attacks that Exploit Confidence Information
+and Basic Countermeasures</a> (CCS‘15，present the idea of model inversion)</li>
+<li><a href="https://arxiv.org/abs/1912.08795">Dreaming to Distill: Data-free Knowledge Transfer via DeepInversion</a>（CVPR’20，distilling (synthetic) training data from the pretrained model only)</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity21/presentation/carlini-extracting">Extracting Training Data from Large Language Models</a> (USENIX Security‘21，extracting training data from GPT-2 based on MIA)</li>
+</ul>
+<h3 id="24-a-namemodelextractionstealingamodel-extractionstealing">2.4. <a name='ModelExtractionStealing'></a>Model Extraction/Stealing</h3>
+<h4 id="241-a-nameattackside-1aattack-side">2.4.1. <a name='AttackSide-1'></a>Attack Side</h4>
+<ul>
+<li><a href="https://dl.acm.org/doi/10.5555/3241094.3241142">Stealing machine learning models via prediction APIs</a> （Security’16，the earliest attack based on distilling）</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity20/presentation/jagielski">High Accuracy and High Fidelity Extraction of Neural Networks</a> （Security‘20，propose the notion of fidelity and exploit the ReLU property）</li>
+<li><a href="https://arxiv.org/abs/2206.14371">Matryoshka: Stealing Functionality of Private ML Data by Hiding Models in Model</a> （TPAMI'24, stealing by stegnography Ours）</li>
+</ul>
+<h4 id="242-a-namedefenseside-1adefense-side">2.4.2. <a name='DefenseSide-1'></a>Defense Side</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/1805.02628">PRADA: Protecting against DNN Model Stealing Attacks</a> （EuroS&amp;P’19，a classic one）</li>
+</ul>
+<hr>
+<h2 id="3-a-namecopyrightprotectionacopyright-protection">3. <a name='CopyrightProtection'></a>Copyright Protection</h2>
+<h3 id="31-a-namemodelwatermarkingamodel-watermarking">3.1. <a name='ModelWatermarking'></a>Model Watermarking</h3>
+<h4 id="311-a-namesurvey-1asurvey">3.1.1. <a name='Survey-1'></a>Survey</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/2108.04974">SoK: How Robust is Image Classification Deep Neural Network Watermarking?</a> （S&amp;P‘22，a good survey）</li>
+<li><a href="https://arxiv.org/abs/2009.12153">A Systematic Review on Model Watermarking for Neural Networks</a></li>
+</ul>
+<h4 id="312-a-namewhite-boxwatermarkingawhite-box-watermarking">3.1.2. <a name='White-boxWatermarking'></a>White-box Watermarking</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/1701.04082">Embedding Watermarks into Deep Neural Networks</a> (ICME’17，the earliest white-box watermarking scheme)</li>
+<li><a href="https://arxiv.org/abs/2205.00199">Cracking White-box DNN Watermarks via Invariant Neuron Transforms</a>  (KDD'23, Weight-based Obfuscation Attack)</li>
+<li><a href="https://www.usenix.org/conference/usenixsecurity23/presentation/yan">Rethinking White-Box Watermarks on Deep Learning Models under Neural Structural Obfuscation</a>  (USENIX Security'23, Structure-based Obfuscation Attack)</li>
+</ul>
+<h4 id="313-a-nameblack-boxwatermarkingablack-box-watermarking">3.1.3. <a name='Black-boxWatermarking'></a>Black-box Watermarking</h4>
+<ul>
+<li><a href="https://www.usenix.org/conference/usenixsecurity18/presentation/adi">Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring</a> (USENIX Security’18，one of the earliest black-box watermarking)</li>
+<li><a href="https://arxiv.org/abs/2309.03466">Neural Dehydration: Effective Erasure of Black-box Watermarks from DNNs with Limited Data</a> (CCS'24, cracking nine mainstream black-box watermarking schemes, Ours)</li>
+</ul>
+<h3 id="32-a-namemodelfingerprintingamodel-fingerprinting">3.2. <a name='ModelFingerprinting'></a>Model Fingerprinting</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/1910.12903">IPGuard: Protecting Intellectual Property of Deep Neural Networks via Fingerprinting the Classification Boundary</a> （AsiaCCS’21，one of the earliest fingerprinting algorithms for classifiers）</li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26">TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks</a> （ESORICS‘21，task-agnostic，Ours）</li>
+<li><a href="https://arxiv.org/abs/2201.07391">MetaV: A Meta-Verifier Approach to Task-Agnostic Model Fingerprinting</a>（KDD’22，more generic，Ours）</li>
+</ul>
+
+        </section>
+        <footer>
+            
+    <div id="keywords">
+        <span>Tags:&nbsp;</span>
+        
+        <!-- terms.html -->
+    <ul class="delimiter" role="presentation">
+            <li><a href="https://ravensanstete.github.io/en/tags/ai-security/">Ai Security</a></li>
+            <li><a href="https://ravensanstete.github.io/en/tags/reading-list/">Reading List</a></li>
+    </ul>
+    </div>
+        </footer>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+        <!-- related.html -->
+        <!-- history.html -->
+        <!-- colophon.html -->
+    <div id="colophon" style="display: none;" aria-live="polite">
+        <strong class="section-title">Colophon</strong>
+        <div class="f">
+            <div id="qr" role="img" aria-label="QR code"></div>
+            <div class="verbose">
+                <div class="has-aria-label-top" aria-label="A Nostalgia Reading List for Beginners on AI Security"><span>https://ravensanstete.github.io/en/post/classical_ai_security/</span></div>
+                <div><span>This page is accessed on: </span><time id="time-stamp"></time></div>
+                <div><span>This page is built on: </span><time datetime="2025-02-05T21:27:53&#43;08:00">2025-02-05T21:27:53&#43;08:00</time></div>
+                
+            </div>
+        </div>
+    </div>
+        
+        <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="A Nostalgia Reading List for Beginners on AI Security">
+        <input id="mastodonPermalink" type="hidden" name="url" value="https://ravensanstete.github.io/en/post/classical_ai_security/">
+        <input id="mastodonText" type="hidden" name="text" value="A Nostalgia Reading List for Beginners on AI Security https://ravensanstete.github.io/en/post/classical_ai_security/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&body=https%3a%2f%2fravensanstete.github.io%2fen%2fpost%2fclassical_ai_security%2f" title="Email" role="button" aria-label="Email">
+            <i class="email" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security%20https%3a%2f%2fravensanstete.github.io%2fen%2fpost%2fclassical_ai_security%2f" title="[i18n] whatsapp" role="button" aria-label="[i18n] whatsapp">
+            <i class="whatsapp" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;url=https://ravensanstete.github.io/en/post/classical_ai_security/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;url=https://ravensanstete.github.io/en/post/classical_ai_security/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https://ravensanstete.github.io/en/post/classical_ai_security/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=https://ravensanstete.github.io/en/post/classical_ai_security/&amp;t=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ravensanstete.github.io/en/post/classical_ai_security/&amp;title=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;summary=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;source=https://ravensanstete.github.io/en/post/classical_ai_security/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=https://ravensanstete.github.io/en/post/classical_ai_security/&amp;media=https://ravensanstete.github.io/en/post/classical_ai_security/&amp;description=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=https://ravensanstete.github.io/en/post/classical_ai_security/&amp;resubmit=true&amp;title=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;caption=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;content=https://ravensanstete.github.io/en/post/classical_ai_security/&amp;canonicalUrl=https://ravensanstete.github.io/en/post/classical_ai_security/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;url=https://ravensanstete.github.io/en/post/classical_ai_security/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security&amp;url=https://ravensanstete.github.io/en/post/classical_ai_security/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=https://ravensanstete.github.io/en/post/classical_ai_security/;title=A%20Nostalgia%20Reading%20List%20for%20Beginners%20on%20AI%20Security" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        <!-- fediverse.html -->
+    </div>
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Mission</strong></p>
+<p>Make AI Progress Safer for Human Society via Technological Innovation.</p>
+<p><strong class="section-title">Xudong Pan<i class="icon copyleft"></i> 2025</strong></p>
+<p>All rights reserved.</p>
+<p><strong class="section-title">Acknowlegdement</strong></p>
+<p><a href="https://themes.gohugo.io/themes/hugo-brewm/">Hugo Brewm Theme</a></p>
+
+                    </div>
+                <div id="main-footer-secondary" class="column" style="--col: 15rem">                    
+                    <!-- menu.html -->
+    <nav id="menu-footer" class="has-aria-label-top" aria-label="Let&#39;s keep in touch!">
+        <ul role="presentation">
+            <li><a href="" aria-label="Google Scholar">        
+                    <i class="icon search" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">Google Scholar</span>
+                </a>
+            </li>
+            <li><a href="" aria-label="Email">        
+                    <i class="icon email" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">Email</span>
+                </a>
+            </li>
+            <li><a href="" aria-label="GitHub">        
+                    <i class="icon github" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">GitHub</span>
+                </a>
+            </li>
+            <li><a href="" aria-label="Twitter">        
+                    <i class="icon twitter" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">Twitter</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background" role="presentation"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" disabled>
+        <!-- brightness & contrast -->
+        <div id="setColorScheme" role="group" aria-label="Color Settings">
+            <!-- darkMode.html -->
+    <input
+        id="lightSwitch"
+        type="checkbox"
+        onclick="setColor()"
+        aria-label="Dark Mode"
+        checked>
+        <label for="lightSwitch">
+            <div class="has-aria-label on" role="status" aria-label="Light"></div>
+            <div class="has-aria-label off" role="status" aria-label="Dark"></div>
+            <div id="lightSwitchIndicator" aria-hidden="true"></div>
+        </label>
+            <!-- contrast.html -->
+    <fieldset id="setContrast">
+        <legend>Contrast</legend>
+        <input
+            id="lessContrast"
+            type="radio" name="setContrast" value="less"
+            onclick="setColor()"
+            >
+            <label for="lessContrast">
+                <span>Low</span>
+            </label>
+        <input
+            id="defaultContrast"
+            type="radio" name="setContrast" value="default"
+            onclick="setColor()"
+            >
+            <label for="defaultContrast">
+                <span>Default</span>
+            </label>
+        <input
+            id="moreContrast"
+            type="radio" name="setContrast" value="more"
+            onclick="setColor()"
+            >
+            <label for="moreContrast">
+                <span>High</span>
+            </label>
+    </fieldset>
+        </div>
+        <!-- colorPalette.html -->
+    <div id="setColorPalette" style="display:none;">
+        <label for="colorPalette">Color Palette</label>
+        <select id="colorPalette" name="colorPalette" oninput="setColorPalette()">
+            <option value="defaultColor">Default</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="tritanopia">Tritanopia</option>
+            <option value="monochrome">Monochrome</option>
+        </select>
+    </div>
+        <!-- fontsize.html -->
+    <div class="has-aria-label-top" aria-label="Font Size">
+        <label class="range" for="fontSize" aria-label="Font Size">
+            <input
+                id="fontSize"
+                type="range" min="8" max="12" step="0.5"
+                oninput="setFontSize()">
+            <output
+                id="fontSizeState"
+                onclick="resetFontSize()"
+                aria-live="polite"
+                >10</output>
+        </label>
+    </div>
+        <!-- baselineStretch.html -->
+    <div id="setBaselineStretch" class="has-aria-label-top" aria-label="Baseline Stretch">
+        <label class="range" for="baselineStretch">
+            <input
+                id="baselineStretch"
+                type="range" min="0.8" max="1.2" step="0.05"
+                oninput="setStretch()"
+                >
+            <output
+                id="baselineStretchState"
+                onclick="resetStretch()"
+                aria-live="polite"
+                >1</output>
+        </label>
+    </div>
+        <!-- OpenDyslexic.html -->
+    <div id="setOpenDyslexic">
+        <input
+            id="OpenDyslexic"
+            type="checkbox"
+            onclick="useOpenDyslexic()"
+            aria-label="Use OpenDyslexic Font"
+            >
+            <label
+                class="has-aria-label-top"
+                for="OpenDyslexic"
+                aria-label="Use OpenDyslexic Font"
+                >
+                <span id="OpenDyslexicState" aria-hidden="true">
+                    <span id="OpenDyslexicIndicator"></span>
+                </span>
+            </label>
+    </div>
+        <!-- menu.html -->
+    <menu
+        id="a11y-menu"
+        class="hide"
+        role="toolbar"
+        aria-label="Accessibility Menu Controls"
+        >
+        <button
+            id="saveButton" class="reverse"
+            onclick="saveA11y()"
+            disabled>Save
+        </button>
+        <button
+            id="resetButton" class="has-aria-label"
+            onclick="resetA11y()"
+            aria-label="Reset"
+            disabled>
+        </button>
+        <button
+            id="closeButton" class="has-aria-label"
+            onclick="closeA11yConsole()"
+            aria-label="Close"
+            >
+        </button>
+    </menu>
+        <noscript>
+            <center id="noScript" role="alert">Uh-oh... Javascript is disabled!</center>
+        </noscript>
+        <center id="noLocalStorage" class="hide" role="alert">LocalStorage is not available in your browser. Settings won&#39;t be saved.</center>
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <!-- bionread.html -->
+    <div id="useBionRead" class="hide">
+        <input
+            id="bionReadSwitch"
+            accesskey="b" type="checkbox"
+            onclick="bionRead()"
+            aria-keyshortcuts="b"
+            aria-label="BionRead Mode"
+            >
+            <label id="bionReadButton" for="bionReadSwitch">
+                <span><strong>Bion</strong>Read</span>
+                <kbd class="key">b</kbd>
+            </label>
+    </div>
+    <!-- [top] bypass block -->
+    <nav aria-label="[i18n] bypassNavigation">
+        <a id="to-top" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <kbd class="key">c</kbd>
+        </a>
+    </nav>
+</footer>
+
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation">
+        <div id="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
