@@ -9,32 +9,23 @@
     <managingEditor>xdpan@fudan.edu.cn (Xudong Pan)</managingEditor>
     <webMaster>xdpan@fudan.edu.cn (Xudong Pan)</webMaster>
     <copyright>Copyright (c) Foxxi</copyright>
-    <lastBuildDate>Wed, 05 Feb 2025 21:27:53 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2025 21:34:47 +0800</lastBuildDate>
     <atom:link href="https://ravensanstete.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Publications</title>
-      <link>https://ravensanstete.github.io/en/categories/publications/</link>
-      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
-      <guid>https://ravensanstete.github.io/en/categories/publications/</guid>
-      <description></description>
-      
-    </item>
     <item>
       <title>AI Safety</title>
       <link>https://ravensanstete.github.io/en/categories/ai-safety/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
       <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
       <guid>https://ravensanstete.github.io/en/categories/ai-safety/</guid>
       <description></description>
       
     </item>
     <item>
-      <title>AI Security</title>
-      <link>https://ravensanstete.github.io/en/categories/ai-security/</link>
-      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <title>Publications</title>
+      <link>https://ravensanstete.github.io/en/categories/publications/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
       <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
-      <guid>https://ravensanstete.github.io/en/categories/ai-security/</guid>
+      <guid>https://ravensanstete.github.io/en/categories/publications/</guid>
       <description></description>
       
     </item>

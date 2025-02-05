@@ -9,8 +9,17 @@
     <managingEditor>xdpan@fudan.edu.cn (Xudong Pan)</managingEditor>
     <webMaster>xdpan@fudan.edu.cn (Xudong Pan)</webMaster>
     <copyright>Copyright (c) Foxxi</copyright>
-    <lastBuildDate>Wed, 05 Feb 2025 21:27:53 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2025 21:34:47 +0800</lastBuildDate>
     <atom:link href="https://ravensanstete.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Safety</title>
+      <link>https://ravensanstete.github.io/en/tags/ai-safety/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
+      <guid>https://ravensanstete.github.io/en/tags/ai-safety/</guid>
+      <description></description>
+      
+    </item>
     <item>
       <title>Publications</title>
       <link>https://ravensanstete.github.io/en/tags/publications/</link>
@@ -21,38 +30,11 @@
       
     </item>
     <item>
-      <title>AI Safety</title>
-      <link>https://ravensanstete.github.io/en/tags/ai-safety/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
-      <guid>https://ravensanstete.github.io/en/tags/ai-safety/</guid>
-      <description></description>
-      
-    </item>
-    <item>
       <title>Self-Replication</title>
       <link>https://ravensanstete.github.io/en/tags/self-replication/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
       <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
       <guid>https://ravensanstete.github.io/en/tags/self-replication/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>AI Security</title>
-      <link>https://ravensanstete.github.io/en/tags/ai-security/</link>
-      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
-      <guid>https://ravensanstete.github.io/en/tags/ai-security/</guid>
-      <description></description>
-      
-    </item>
-    <item>
-      <title>Reading List</title>
-      <link>https://ravensanstete.github.io/en/tags/reading-list/</link>
-      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
-      <guid>https://ravensanstete.github.io/en/tags/reading-list/</guid>
       <description></description>
       
     </item>
