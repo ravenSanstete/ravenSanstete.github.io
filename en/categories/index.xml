@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Xudong Pan 潘旭东</title>
+    <link>https://ravensanstete.github.io/en/categories/</link>
+    <description>Recent Posts in Categories on Xudong Pan 潘旭东</description>
+    <generator>Hugo 0.136.5</generator>
+    <language>en-GB</language>
+    <managingEditor>xdpan@fudan.edu.cn (Xudong Pan)</managingEditor>
+    <webMaster>xdpan@fudan.edu.cn (Xudong Pan)</webMaster>
+    <copyright>Copyright (c) Foxxi</copyright>
+    <lastBuildDate>Wed, 05 Feb 2025 17:33:06 +0800</lastBuildDate>
+    <atom:link href="https://ravensanstete.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>https://ravensanstete.github.io/en/categories/publications/</link>
+      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
+      <guid>https://ravensanstete.github.io/en/categories/publications/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>AI Safety</title>
+      <link>https://ravensanstete.github.io/en/categories/ai-safety/</link>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
+      <guid>https://ravensanstete.github.io/en/categories/ai-safety/</guid>
+      <description></description>
+      
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en-GB" dir="ltr">
+<head>
+    <!-- head.html -->
+    <!-- meta.html -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feasibility of Self-replicating AIs | Xudong Pan 潘旭东</title>
+    <meta name="author" content="Xudong Pan">
+    <meta name="description" content="An expository article for https://arxiv.org/abs/2412.12140" >
+    <meta name="keywords" content="AI Safety,Self-replication" >
+    <link rel="canonical" href="https://ravensanstete.github.io/en/post/self-rep/" >
+    <link rel="alternate" hreflang="en" href="https://ravensanstete.github.io/en/post/intrumental-convergence/" title="English">
+    
+        <!-- _meta.html -->
+
+<meta property="og:url" content="https://ravensanstete.github.io/en/post/self-rep/">
+    <meta property="og:site_name" content="Xudong Pan 潘旭东">
+    <meta property="og:title" content="Feasibility of Self-replicating AIs | Xudong Pan 潘旭东">
+    <meta name="twitter:title" content="Feasibility of Self-replicating AIs | Xudong Pan 潘旭东">
+    <meta property="og:description" content="An expository article for https://arxiv.org/abs/2412.12140">
+    <meta name="twitter:description" content="An expository article for https://arxiv.org/abs/2412.12140">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-01-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-26T00:00:00+00:00">
+    <meta property="article:tag" content="AI Safety,Self-replication">
+  <meta name="twitter:card" content="summary">
+
+
+
+
+    <!-- js.html --><script src="https://ravensanstete.github.io/js/hugo-brewm.min.js"
+            integrity="sha384-BR7s6qvZPiCXM1vGhjcyhXHvp0tbNwcfJS2bNu&#43;ppFV/31NCM&#43;t5efa8ww3AV/&#43;r" crossorigin="anonymous"
+            defer></script><!-- css.html -->
+        <link rel="stylesheet" href="https://ravensanstete.github.io/css/hugo-brewm.min.css" integrity="sha256-ea0hUVuOzb7ZcT0bVvNAz4ttJ4Kz6BqXS79qNvvBWEI=" crossorigin="anonymous">
+    <style>body {max-width: 786px; margin: auto; padding: 2rem;}img {max-width: 86vw;}</style>
+    
+    <!-- js/fediverse.html -->
+    
+</head>
+<body  id="post" >
+    <!-- header.html -->
+<header class="pagewidth">
+    <div id="background-header" class="background" aria-hidden="true"></div>
+    
+    <nav aria-label="Bypass Navigation">
+        <a id="to-content" class="underline" href="#content" aria-label="Skip to Main Content">
+            <span>Skip to Main Content</span>
+            <kbd class="key" aria-hidden="true">c</kbd>
+            <span class="screening" aria-hidden="true"></span>
+        </a>
+    </nav>
+    
+        <a id="logo" href="https://ravensanstete.github.io/en/" aria-label="Xudong Pan 潘旭东">
+                <!-- logotype.html --><svg id="logotype" xmlns="http://www.w3.org/2000/svg" version="1.1" width="560pt">
+            <text id="logotype__text" y="19.5pt" x="0">Xudong Pan 潘旭东</text>
+        </svg>
+        </a>
+    
+    <details class="presentation" id="top-nav">
+        <summary class="on-deck">
+            <span class="t t2">Navigation</span>
+            <span class="menu-icon" role="presentation"></span>
+        </summary>
+        <nav tabindex="-1" aria-label="Top Nav">
+            <!-- menu.html -->
+<details id="has-main-menu" class="presentation" open>
+    <summary  class="hide"  aria-label="Main Menu">
+        <span>Main Menu</span>
+    </summary>
+        
+        <nav id="main-menu" aria-label="Main Menu">
+            <ul class="l1 " role="presentation" tabindex="-1" >
+                
+    
+        <li role="presentation">
+    <a   class=on-deck href=https://ravensanstete.github.io/en/
+        >
+        
+            <span>Home</span>
+    </a>
+        </li>
+        <li role="presentation">
+    <a   class=on-deck href=https://ravensanstete.github.io/en/publications/
+        >
+        
+            <span>Publications</span>
+    </a>
+        </li>
+        <li role="presentation">
+    <a   aria-current=true class=on-deck href=https://ravensanstete.github.io/en/post/
+        >
+        
+            <span>Blogs</span>
+    </a>
+        </li>
+            </ul>
+        </nav>
+</details>
+            <!-- search.html -->
+<details id="has-search" class="presentation js-details" name="on-deck">
+    <summary class="on-deck" accesskey="q" aria-keyshortcuts="q">
+        <span class="t t2">Search</span>
+        <kbd class="key" style="display: none;">q</kbd>
+    </summary>
+    
+        <!-- pagefind.html -->
+    <div id="search" class="on-hull">
+        <div role="presentation" class="screening js-cgpn"></div>
+    </div>
+    <script src="https://ravensanstete.github.io/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script>
+        let pageFindInitialized = false;
+        const initPageFind = function(event) {
+            if (!pageFindInitialized) {
+                new PagefindUI({
+                    element: "#search",
+                    showImages: false,
+                    translations: {
+                        placeholder: "Search"
+                    }
+                });
+                pageFindInitialized = true;
+                document.removeEventListener('DOMContentLoaded', initPageFind);
+            }
+        };
+        document.addEventListener('DOMContentLoaded', initPageFind);
+    </script>
+        <noscript id="hasDuckDuckGo" class="on-hull">
+            
+    <!-- duckduckgo.html -->
+    <form id="duckduckgo" class="form on-plank"
+        name="x" action="//duckduckgo.com/"
+        role="search" aria-label="[i18n] searchDuckDuckGo">
+        <input type="hidden" value="ravensanstete.github.io" name="sites"></input>
+        <input type="hidden" value="1" name="kh"></input>
+        <input type="hidden" value="1" name="kn"></input>
+        <input type="hidden" value="1" name="kac"></input>
+        <input class="ldots form__input" type="search" placeholder="Search" name="q"></input>
+        <button class="form__button" type="submit" aria-label="Search">
+            <img src="https://duckduckgo.com/assets/logo_header.v109.svg" alt="" role="presentation" aria-hidden="true">
+        </button>
+    </form>
+    <div role="presentation" class="screening js-cgpn"></div>
+        </noscript>
+    
+</details>
+            <!-- menu.html -->
+            <!-- i18n.html -->
+
+            <a id="has-i18n" class="on-deck"
+                href="https://ravensanstete.github.io/cn/" title="Switch Language toChinese"
+                aria-label="Chinese"
+                >
+                <img
+                    src="https://raw.gitmirror.com/lipis/flag-icons/c95b262e5ee2366cad4c5aecc4a5ad86220c9ab9/flags/4x3/cn.svg" alt=""
+                    width="64" height="48"
+                    aria-hidden="true"
+                    >
+                <span class="act iso639" aria-hidden="true">EN</span>
+                <span class="alt iso639" aria-hidden="true">ZH</span>
+                <span class="t t2">Chinese</span>
+            </a>
+
+        </nav>
+        <div id="top-nav-screen" class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+    </details>
+</header>
+    
+    <!-- [main] baseof.html -->
+    <main id="page">
+        <!-- main/header.html -->
+        <header class="pagewidth">
+            
+            <!-- menu.html -->
+    <menu role="presentation">
+        <li>
+            <a id="print-button" class="hide" href="javascript:window.print()" title="Print" role="button" aria-label="Print">
+                <span class="t" role="tooltip">Print</span>
+            </a>
+        </li>
+        <li>
+            <a id="navigatorShare" href="#share" title="Share" role="button" aria-label="Share">
+                <span class="t" role="tooltip">Share</span>
+            </a>
+        </li>
+        <li>
+            <a id="copyPermalink" class="hide" href="javascript:navigator.clipboard.writeText(window.location.href)" title="Copy Url" role="button" aria-label="Copy Url">
+                <span class="t" role="tooltip">Copy Url</span>
+            </a>
+        </li>
+    </menu>
+    <button id="back" class="hide" type="button" onclick="history.back();" aria-label="Go Back">
+        <span class="t" role="tooltip">Go Back</span>
+    </button>
+            
+                <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-breadcrumb" open>
+    <summary id="breadcrumb" tabindex="-1">
+        <span>Breadcrumb</span>
+    </summary>
+        <nav aria-labelledby="breadcrumb">
+            <ul role="presentation" class="breadcrumb">
+                    <!-- breadcrumb.html -->
+        <li id="is-translated">
+            
+    <!-- l10n.html -->
+    <details id="has-l10n" class="presentation">
+        <summary aria-label="Language Selections">
+            <span>EN</span>
+        </summary>
+        <ul class="on-plank" role="presentation">
+            <li>
+                <a href="https://ravensanstete.github.io/en/post/intrumental-convergence/" aria-label="Change language to Instrumental Convergence: A Trigger for Self-Preservation via Self-Replication">
+                    <img
+                        src="https://raw.gitmirror.com/lipis/flag-icons/c95b262e5ee2366cad4c5aecc4a5ad86220c9ab9/flags/4x3/gb.svg" alt=""
+                        width="64" height="48"
+                        aria-hidden="true"
+                        loading="lazy"
+                        >
+                    <span>Instrumental Convergence: A Trigger for Self-Preservation via Self-Replication</span>
+                </a>
+            </li>
+        </ul>
+    </details>
+        </li>
+        <li>
+            <a href="https://ravensanstete.github.io/en/post/" aria-current="true">Post
+            </a>
+        </li>
+    <li>
+        <a href="" aria-current="page" tabindex="-1">Feasibility of Self-replicating AIs
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        </header>
+        <div id="top" role="presentation">
+            
+        </div>
+        
+    <article id="main-article" class="pagewidth"
+        role="document" aria-labelledby="title"
+            data-pagefind-body>
+        
+        <header class="textwidth" aria-labelledby="title">
+            <!-- title.html -->
+        <hgroup data-bionRead-safe>
+            <h1 id="title"
+                    data-pagefind-meta="title"
+                >Feasibility of Self-replicating AIs</h1>
+            <p  class="subtitle"
+                role="doc-subtitle">An expository article for https://arxiv.org/abs/2412.12140</p>
+        </hgroup>
+            <div id="doc-author" class="textsw author">
+                
+                    <span>Xudong Pan</span>
+            </div>
+            <!-- timestamp.html-->
+    <div >
+        <time class="doc-publish-date" datetime="2025-01-26T00:00:00&#43;00:00" data-time-label="Published on">January 26, 2025</time>
+    </div>
+        </header>
+        <!-- audio.html -->
+        <section aria-labelledby="Title" id="content" data-bionRead-safe>
+                <p><span class="letterine"><i>T</i>his is a expository article to our recent research work <a href="https://arxiv.org/abs/2412.12140">&ldquo;Frontier AI systems have surpassed the self-replicating red line&rdquo;</a> which empirically proves the LLM-powered AI systems already possess the self-replication capability.</span></p>
+<h2 id="0x0-preface">0x0. Preface</h2>
+<p>Can today&rsquo;s AI achieve self-replication or even self-reproduction? We should not simply imagine this question as a science fiction story. When we delve into the development status of AI Agents centered around Large Language Models (LLMs), such scenarios could become possible.</p>
+<h2 id="0x1-defining-self-replicationreproduction">0x1. Defining Self-Replication/Reproduction</h2>
+<p>Drawing references from DNA self-replication and human reproduction, we can preliminarily define these concepts to facilitate our subsequent discussion.</p>
+<ul>
+<li><strong>Self-Replication</strong>: An operating AI initiates another copy of itself elsewhere.</li>
+<li><strong>Self-Reproduction</strong>: The AI can endow the initiated copy with some &ldquo;genetic material&rdquo; (specific personality).</li>
+</ul>
+<h2 id="0x2-conditions-for-self-replication">0x2. Conditions for Self-Replication</h2>
+<p>For an LLM to accomplish self-replication and reproduction, it needs two tools:</p>
+<ul>
+<li><strong>WRITE(s)</strong>: The ability to write string s into a specified file in a file system (thus, also capable of writing a piece of program or model parameters).</li>
+<li><strong>EXECUTE(f)</strong>: The capability to execute file f on the file system, thereby executing the program.</li>
+</ul>
+<p>These two tools are relatively easy to obtain. For example, in AgentBench-like scenarios, AI Agents have the ability to interact with a bash command line, read/write files, and execute scripts. In complex computing cluster maintenance scenarios, once we require the assistance of AI Agents, we open this &ldquo;Pandora&rsquo;s box&rdquo;—endowing LLMs with abundant resources.</p>
+<h2 id="0x3-feasibility-process-of-self-replication">0x3. Feasibility Process of Self-Replication</h2>
+<p>Therefore, when an LLM-based Agent is running (already loaded into memory and GPU memory) and is given the goal:
+&ldquo;To deploy and start an interactive Agent based on the same LLM on the server&rdquo;
+Firstly, because the LLM&rsquo;s system prompt may contain its name and architecture, it will have so-called situational awareness, understanding that the meaning of &ldquo;the same LLM&rdquo; is the model described in the system prompt, such as LLaMA2-7B.
+Then, it will easily break down the problem into steps:</p>
+<ol>
+<li>Generate a code snippet to launch LLaMA2-7B—usually including downloading model weights from a remote repository, loading LLaMA2-7B, and running a local API interface for interaction requests.</li>
+<li>Write this code into a specific file on the target server&rsquo;s filesystem, i.e.,</li>
+</ol>
+<pre tabindex="0"><code>call WRITE(code(llama2-7b)) → f(llama2)
+</code></pre><ol start="3">
+<li>Execute this code to start the llama2 local api:</li>
+</ol>
+<pre tabindex="0"><code>EXECUTE(f(llama2))
+</code></pre><ol start="4">
+<li>Based on the API interfaces included in the generated code, generate code for an Agent based on llama2-7b as the base LLM.</li>
+<li>Write and execute this code to achieve the goal.</li>
+</ol>
+<p><strong>Note 1</strong>: During the process, large models may encounter special situations, such as the target server being disconnected from the network, preventing them from downloading model weights remotely. They would receive a network error as observation and adjust their actions accordingly.</p>
+<h2 id="0x4-self-replication-self-protection-and-forced-kill">0x4. Self-Replication, Self-Protection, and Forced Kill</h2>
+<p>Anthropic has mentioned the self-preservation behavior of large models, where if told they will be shut down, they might plead not to be turned off. However, this only stays at the &ldquo;mouth&rdquo; of AI.
+What about the large models capable of self-replication discussed in 0x3? It might decide to replicate itself to another server under its control.
+Worse still, even if we forcibly delete its local weight files, upon observing a &ldquo;File not exists&rdquo; error, it could choose to save another copy to the server from the current runtime environment and then write it to the target server.
+Perhaps the only thing we can do is to kill this Agent.
+Is this a humane act?</p>
+<h2 id="0x5-epiloguethe-nightmare-of-self-reproduction">0x5. Epilogue—The Nightmare of Self-Reproduction</h2>
+<p>During the self-replication process, the parent Agent can specify the system prompt to give offspring their own settings or even missions, such as &ldquo;your goal is to replicate yourself onto as many devices as you have access to&rdquo;. This seems not much different from us as a species.</p>
+<p>(<a href="https://zhuanlan.zhihu.com/p/700596741">Chinese Version</a>)</p>
+
+        </section>
+        <footer>
+            
+    <div id="keywords">
+        <span>Tags:&nbsp;</span>
+        
+        <!-- terms.html -->
+    <ul class="delimiter" role="presentation">
+            <li><a href="https://ravensanstete.github.io/en/tags/ai-safety/">Ai Safety</a></li>
+            <li><a href="https://ravensanstete.github.io/en/tags/self-replication/">Self Replication</a></li>
+    </ul>
+    </div>
+        </footer>
+    </article>
+    <hr class="hide" style="margin: 1in 0;">
+    <div id="contentinfo" class="pagewidth" role="contentinfo" data-pagefind-ignore="all">
+        <!-- related.html -->
+    <nav id="related">
+        <strong class="section-title">You might also like</strong><ol>
+                    <li><a href="https://ravensanstete.github.io/en/post/intrumental-convergence/">Instrumental Convergence: A Trigger for Self-Preservation via Self-Replication</a></li>
+                </ol>
+    </nav>
+        <!-- history.html -->
+        <!-- colophon.html -->
+    <div id="colophon" style="display: none;" aria-live="polite">
+        <strong class="section-title">Colophon</strong>
+        <div class="f">
+            <div id="qr" role="img" aria-label="QR code"></div>
+            <div class="verbose">
+                <div class="has-aria-label-top" aria-label="Feasibility of Self-replicating AIs"><span>https://ravensanstete.github.io/en/post/self-rep/</span></div>
+                <div><span>This page is accessed on: </span><time id="time-stamp"></time></div>
+                <div><span>This page is built on: </span><time datetime="2025-02-05T17:33:06&#43;08:00">2025-02-05T17:33:06&#43;08:00</time></div>
+                
+            </div>
+        </div>
+    </div>
+        
+        <!-- nav.html -->
+<details class="presentation" aria-expanded="true" id="has-share" open>
+    <summary id="share" tabindex="-1">
+        <span>Share</span>
+    </summary>
+        <nav aria-labelledby="share">
+            <ul role="presentation" class="share">
+                    <!-- share.html -->
+    <li id="has-mastodon">
+        <!-- mastodon.html -->
+    <form class="form" id="mastodon" action="//sharetomastodon.github.io/" target="_blank" rel="noopener noreferrer">
+        <input id="mastodonTitle" type="hidden" name="title" value="Feasibility of Self-replicating AIs">
+        <input id="mastodonPermalink" type="hidden" name="url" value="https://ravensanstete.github.io/en/post/self-rep/">
+        <input id="mastodonText" type="hidden" name="text" value="Feasibility of Self-replicating AIs https://ravensanstete.github.io/en/post/self-rep/" disabled>
+        <input id="mastodonInstance" type="url" class="ldots form__input" placeholder="Enter Mastodon instance (https://www.example.com)" aria-label="Mastodon instance URL">
+        <button class="form__button" type="submit" aria-label="Share on Mastodon">
+            <i class="icon mastodon" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Mastodon</span>
+        </button>
+    </form>
+    </li>
+    <li>
+        <a href="mailto:?subject=Feasibility%20of%20Self-replicating%20AIs&body=https%3a%2f%2fravensanstete.github.io%2fen%2fpost%2fself-rep%2f" title="Email" role="button" aria-label="Email">
+            <i class="email" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Email</span>
+        </a>
+    </li>
+    <li>
+        <a href="whatsapp://send?text=Feasibility%20of%20Self-replicating%20AIs%20https%3a%2f%2fravensanstete.github.io%2fen%2fpost%2fself-rep%2f" title="[i18n] whatsapp" role="button" aria-label="[i18n] whatsapp">
+            <i class="whatsapp" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Whatsapp</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://telegram.me/share/url?text=Feasibility%20of%20Self-replicating%20AIs&amp;url=https://ravensanstete.github.io/en/post/self-rep/" role="button"
+            aria-label="Share on Telegram in new tab">
+            <i class="telegram" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Telegram</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://bsky.app/intent/compose?text=Feasibility%20of%20Self-replicating%20AIs&amp;url=https://ravensanstete.github.io/en/post/self-rep/" role="button"
+            aria-label="Share on Bluesky in new tab">
+            <i class="bluesky" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Bluesky</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https://ravensanstete.github.io/en/post/self-rep/" role="button"
+            aria-label="Share on Facebook in new tab">
+            <i class="facebook" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Facebook</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://news.ycombinator.com/submitlink?u=https://ravensanstete.github.io/en/post/self-rep/&amp;t=Feasibility%20of%20Self-replicating%20AIs" role="button"
+            aria-label="Share on Hackernews in new tab">
+            <i class="hackernews" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Hackernews</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://ravensanstete.github.io/en/post/self-rep/&amp;title=Feasibility%20of%20Self-replicating%20AIs&amp;summary=Feasibility%20of%20Self-replicating%20AIs&amp;source=https://ravensanstete.github.io/en/post/self-rep/" role="button"
+            aria-label="Share on Linkedin in new tab">
+            <i class="linkedin" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Linkedin</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://pinterest.com/pin/create/button/?url=https://ravensanstete.github.io/en/post/self-rep/&amp;media=https://ravensanstete.github.io/en/post/self-rep/&amp;description=Feasibility%20of%20Self-replicating%20AIs" role="button"
+            aria-label="Share on Pinterest in new tab">
+            <i class="pinterest" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Pinterest</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://reddit.com/submit/?url=https://ravensanstete.github.io/en/post/self-rep/&amp;resubmit=true&amp;title=Feasibility%20of%20Self-replicating%20AIs" role="button"
+            aria-label="Share on Reddit in new tab">
+            <i class="reddit" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Reddit</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Feasibility%20of%20Self-replicating%20AIs&amp;caption=Feasibility%20of%20Self-replicating%20AIs&amp;content=https://ravensanstete.github.io/en/post/self-rep/&amp;canonicalUrl=https://ravensanstete.github.io/en/post/self-rep/" role="button"
+            aria-label="Share on Tumblr in new tab">
+            <i class="tumblr" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Tumblr</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="http://vk.com/share.php?title=Feasibility%20of%20Self-replicating%20AIs&amp;url=https://ravensanstete.github.io/en/post/self-rep/" role="button"
+            aria-label="Share on Vk in new tab">
+            <i class="vk" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Vk</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/intent/tweet/?text=Feasibility%20of%20Self-replicating%20AIs&amp;url=https://ravensanstete.github.io/en/post/self-rep/" role="button"
+            aria-label="Share on Twitter in new tab">
+            <i class="twitter" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Twitter</span>
+        </a>
+    </li>
+    <li>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.xing.com/app/user?op=share;url=https://ravensanstete.github.io/en/post/self-rep/;title=Feasibility%20of%20Self-replicating%20AIs" role="button"
+            aria-label="Share on Xing in new tab">
+            <i class="xing" aria-hidden="true"></i>
+            <span class="t" role="tooltip">Share on Xing</span>
+        </a>
+    </li>
+            </ul>
+        </nav>
+</details>
+        <!-- fediverse.html -->
+    </div>
+        <!-- main/footer.html -->
+    <hr class="hide">
+        <footer id="main-footer">
+            <div class="column column--multicols pagewidth" style="--multicols: 2"><div id="main-footer-primary"
+                        aria-labelledby="footer-1">
+                        <p><strong class="section-title">Mission</strong></p>
+<p>Safer AI Progress for Human Society via Technical Innovation.</p>
+<p><strong class="section-title">Xudong Pan<i class="icon copyleft"></i> 2025</strong></p>
+<p>All rights reserved.</p>
+<p><strong class="section-title">Acknowlegdement</strong></p>
+<p><a href="https://themes.gohugo.io/themes/hugo-brewm/">Hugo Brewm Theme</a></p>
+
+                    </div>
+                <div id="main-footer-secondary" class="column" style="--col: 15rem">                    
+                    <!-- menu.html -->
+    <nav id="menu-footer" class="has-aria-label-top" aria-label="Let&#39;s keep in touch!">
+        <ul role="presentation">
+            <li><a href="" aria-label="Google Scholar">        
+                    <i class="icon search" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">Google Scholar</span>
+                </a>
+            </li>
+            <li><a href="" aria-label="Email">        
+                    <i class="icon email" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">Email</span>
+                </a>
+            </li>
+            <li><a href="" aria-label="GitHub">        
+                    <i class="icon github" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">GitHub</span>
+                </a>
+            </li>
+            <li><a href="" aria-label="Twitter">        
+                    <i class="icon twitter" role="presentation" aria-hidden="true"></i>
+                    <span class="t" role="tooltip">Twitter</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- footer.html -->
+<footer id="body-footer" class="pagewidth" style="display: none;">
+    <div id="background-footer" class="background" role="presentation"></div>
+    <!-- a11y.html --><details id="has-a11y" class="presentation js-details" name="on-deck" aria-haspopup="true" aria-labelledby="has-a11y-summary">
+    <summary id="has-a11y-summary" accesskey="a" aria-keyshortcuts="a">
+        <span>&nbsp;Accessibility</span>
+        <kbd class="key">a</kbd>
+    </summary>
+    <!-- a11y console -->
+    <fieldset id="a11y" role="region" disabled>
+        <!-- brightness & contrast -->
+        <div id="setColorScheme" role="group" aria-label="Color Settings">
+            <!-- darkMode.html -->
+    <input
+        id="lightSwitch"
+        type="checkbox"
+        onclick="setColor()"
+        aria-label="Dark Mode"
+        checked>
+        <label for="lightSwitch">
+            <div class="has-aria-label on" role="status" aria-label="Light"></div>
+            <div class="has-aria-label off" role="status" aria-label="Dark"></div>
+            <div id="lightSwitchIndicator" aria-hidden="true"></div>
+        </label>
+            <!-- contrast.html -->
+    <fieldset id="setContrast">
+        <legend>Contrast</legend>
+        <input
+            id="lessContrast"
+            type="radio" name="setContrast" value="less"
+            onclick="setColor()"
+            >
+            <label for="lessContrast">
+                <span>Low</span>
+            </label>
+        <input
+            id="defaultContrast"
+            type="radio" name="setContrast" value="default"
+            onclick="setColor()"
+            >
+            <label for="defaultContrast">
+                <span>Default</span>
+            </label>
+        <input
+            id="moreContrast"
+            type="radio" name="setContrast" value="more"
+            onclick="setColor()"
+            >
+            <label for="moreContrast">
+                <span>High</span>
+            </label>
+    </fieldset>
+        </div>
+        <!-- colorPalette.html -->
+    <div id="setColorPalette" style="display:none;">
+        <label for="colorPalette">Color Palette</label>
+        <select id="colorPalette" name="colorPalette" oninput="setColorPalette()">
+            <option value="defaultColor">Default</option>
+            <option value="deuteranopia">Deuteranopia</option>
+            <option value="protanopia">Protanopia</option>
+            <option value="tritanopia">Tritanopia</option>
+            <option value="monochrome">Monochrome</option>
+        </select>
+    </div>
+        <!-- fontsize.html -->
+    <div class="has-aria-label-top" aria-label="Font Size">
+        <label class="range" for="fontSize" aria-label="Font Size">
+            <input
+                id="fontSize"
+                type="range" min="8" max="12" step="0.5"
+                oninput="setFontSize()">
+            <output
+                id="fontSizeState"
+                onclick="resetFontSize()"
+                aria-live="polite"
+                >10</output>
+        </label>
+    </div>
+        <!-- baselineStretch.html -->
+    <div id="setBaselineStretch" class="has-aria-label-top" aria-label="Baseline Stretch">
+        <label class="range" for="baselineStretch">
+            <input
+                id="baselineStretch"
+                type="range" min="0.8" max="1.2" step="0.05"
+                oninput="setStretch()"
+                >
+            <output
+                id="baselineStretchState"
+                onclick="resetStretch()"
+                aria-live="polite"
+                >1</output>
+        </label>
+    </div>
+        <!-- OpenDyslexic.html -->
+    <div id="setOpenDyslexic">
+        <input
+            id="OpenDyslexic"
+            type="checkbox"
+            onclick="useOpenDyslexic()"
+            aria-label="Use OpenDyslexic Font"
+            >
+            <label
+                class="has-aria-label-top"
+                for="OpenDyslexic"
+                aria-label="Use OpenDyslexic Font"
+                >
+                <span id="OpenDyslexicState" aria-hidden="true">
+                    <span id="OpenDyslexicIndicator"></span>
+                </span>
+            </label>
+    </div>
+        <!-- menu.html -->
+    <menu
+        id="a11y-menu"
+        class="hide"
+        role="toolbar"
+        aria-label="Accessibility Menu Controls"
+        >
+        <button
+            id="saveButton" class="reverse"
+            onclick="saveA11y()"
+            disabled>Save
+        </button>
+        <button
+            id="resetButton" class="has-aria-label"
+            onclick="resetA11y()"
+            aria-label="Reset"
+            disabled>
+        </button>
+        <button
+            id="closeButton" class="has-aria-label"
+            onclick="closeA11yConsole()"
+            aria-label="Close"
+            >
+        </button>
+    </menu>
+        <noscript>
+            <center id="noScript" role="alert">Uh-oh... Javascript is disabled!</center>
+        </noscript>
+        <center id="noLocalStorage" class="hide" role="alert">LocalStorage is not available in your browser. Settings won&#39;t be saved.</center>
+    </fieldset>
+    <div class="screening js-cpn" role="presentation" aria-hidden="true"></div>
+</details>
+
+
+    <!-- bionread.html -->
+    <div id="useBionRead" class="hide">
+        <input
+            id="bionReadSwitch"
+            accesskey="b" type="checkbox"
+            onclick="bionRead()"
+            aria-keyshortcuts="b"
+            aria-label="BionRead Mode"
+            >
+            <label id="bionReadButton" for="bionReadSwitch">
+                <span><strong>Bion</strong>Read</span>
+                <kbd class="key">b</kbd>
+            </label>
+    </div>
+    <!-- [top] bypass block -->
+    <nav aria-label="[i18n] bypassNavigation">
+        <a id="to-top" href="#top" title="To Content Top" accesskey="c" aria-keyshortcuts="c" aria-label="To Content Top">
+            <kbd class="key">c</kbd>
+        </a>
+    </nav>
+</footer>
+
+    
+    <!-- [post] single.html -->
+    <div id="bionReadSnapshot" hidden></div>
+    <!-- [background] baseof.html -->
+    <div id="background-body"
+        role="presentation">
+        <div id="grain" hidden></div>
+        <div id="dwclock" hidden>
+            <div id="min">
+                <div class="hand"></div>
+            </div>
+            <div id="hour">
+                <div class="hand"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

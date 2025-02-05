@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publication on Xudong Pan</title>
+    <link>http://localhost:1313/en/categories/publication/</link>
+    <description>Recent Posts in Publication on Xudong Pan</description>
+    <generator>Hugo 0.136.5</generator>
+    <language>en-GB</language>
+    <managingEditor>xdpan@fudan.edu.cn (Xudong Pan)</managingEditor>
+    <webMaster>xdpan@fudan.edu.cn (Xudong Pan)</webMaster>
+    <copyright>Copyright (c) Foxxi</copyright>
+    <lastBuildDate>Wed, 05 Feb 2025 11:42:14 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/categories/publication/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
