@@ -9,7 +9,7 @@
     <managingEditor>xdpan@fudan.edu.cn (Xudong Pan)</managingEditor>
     <webMaster>xdpan@fudan.edu.cn (Xudong Pan)</webMaster>
     <copyright>Copyright (c) Foxxi</copyright>
-    <lastBuildDate>Thu, 06 Feb 2025 10:56:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2025 21:26:29 +0800</lastBuildDate>
     <atom:link href="https://ravensanstete.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Security</title>
@@ -30,15 +30,6 @@
       
     </item>
     <item>
-      <title>AI Safety</title>
-      <link>https://ravensanstete.github.io/en/tags/ai-safety/</link>
-      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
-      <guid>https://ravensanstete.github.io/en/tags/ai-safety/</guid>
-      <description></description>
-      
-    </item>
-    <item>
       <title>Publications</title>
       <link>https://ravensanstete.github.io/en/tags/publications/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
@@ -48,11 +39,11 @@
       
     </item>
     <item>
-      <title>Self-Replication</title>
-      <link>https://ravensanstete.github.io/en/tags/self-replication/</link>
-      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
+      <title>AI Safety</title>
+      <link>https://ravensanstete.github.io/en/tags/ai-safety/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
       <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
-      <guid>https://ravensanstete.github.io/en/tags/self-replication/</guid>
+      <guid>https://ravensanstete.github.io/en/tags/ai-safety/</guid>
       <description></description>
       
     </item>
@@ -62,6 +53,15 @@
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
       <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
       <guid>https://ravensanstete.github.io/en/tags/self-preservation/</guid>
+      <description></description>
+      
+    </item>
+    <item>
+      <title>Self-Replication</title>
+      <link>https://ravensanstete.github.io/en/tags/self-replication/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <author>xdpan@fudan.edu.cn (Xudong Pan)</author>
+      <guid>https://ravensanstete.github.io/en/tags/self-replication/</guid>
       <description></description>
       
     </item>
