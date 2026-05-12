@@ -23,6 +23,8 @@ For a complete and up-to-date list, please visit my [Google Scholar profile](htt
 
 - _[ICLR'26]_ Xinyi Wu, Geng Hong, Pei Chen, Yueyue Chen, **Xudong Pan**, Min Yang. PRISON: Unmasking the Criminal Potential of Large Language Models. ICLR, 2026. [Link](https://arxiv.org/abs/2506.16150)
 
+- _[Preprint]_ Jinghan Yang, Yihe Fan, **Xudong Pan**, Min Yang. FlowGuard: Towards Lightweight In-Generation Safety Detection for Diffusion Models via Linear Latent Decoding. [Link](https://arxiv.org/abs/2604.07879)
+
 ## 2025
 
 - _[WWW'25]_ Wuyuao Mai, Geng Hong, Peichen Chen, **Xudong Pan**, Bo Liu, Yuzhuo Zhang, Hongwei Duan, Min Yang. You Can't Eat Your Cake and Have It Too: The Performance Degradation of LLMs with Jailbreak Defense. Proceedings of the ACM on Web Conference 2025, P872-883. [Link](https://arxiv.org/abs/2501.12210)
@@ -32,10 +34,6 @@ For a complete and up-to-date list, please visit my [Google Scholar profile](htt
 - _[Preprint]_ Changyue Jiang, **Xudong Pan**, Geng Hong, Chenfu Bao, Min Yang. RAG-Thief: Scalable Extraction of Private Data from Retrieval-Augmented Generation Applications with Agent-based Attacks.
 
 - _[Preprint]_ Yihe Fan, Wenqi Zhang, **Xudong Pan**, Min Yang. Evaluation Faking: Unveiling Observer Effects in Safety Evaluation of Frontier AI Systems. Arxiv. [Link](https://arxiv.org/abs/2505.17815)
-
-## 2026
-
-- _[Preprint]_ Jinghan Yang, Yihe Fan, **Xudong Pan**, Min Yang. FlowGuard: Towards Lightweight In-Generation Safety Detection for Diffusion Models via Linear Latent Decoding. Arxiv. [Link](https://arxiv.org/abs/2604.07879)
 
 ## 2024
 
