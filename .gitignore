@@ -1,0 +1,8 @@
+/public/
+/resources/_gen/
+/assets/_gen/
+/hugo_cache/
+*.swp
+*.swo
+*~
+.DS_Store

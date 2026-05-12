@@ -1,0 +1,5 @@
+{{ with site.Params.umami }}
+{{ if and .siteID .trackerURL }}
+<script async defer data-website-id="{{ .siteID }}" src="{{ .trackerURL }}/umami.js"></script>
+{{ end }}
+{{ end }}

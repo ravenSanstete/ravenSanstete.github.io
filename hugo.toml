@@ -1,0 +1,83 @@
+baseURL = "https://ravensanstete.github.io/"
+title = "Xudong Pan"
+theme = "github.com/frjo/hugo-theme-zen/v6"
+locale = "en-US"
+defaultContentLanguage = "en"
+pluralizelisttitles = false
+removePathAccents = true
+rssLimit = 20
+copyright = "© 2024 Xudong Pan. All rights reserved."
+
+[pagination]
+  pagerSize = 10
+  path = "page"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "searchindex"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "SearchIndex"]
+  section = ["HTML", "RSS", "JSON"]
+
+[params]
+  contact = "xdpan@fudan.edu.cn"
+  description = "Xudong Pan - Assistant Professor, School of Computer Science, Fudan University. Research in AI Safety, LLM Safety, Agent Safety, and Frontier AI Safety."
+  dateformat = "2 January, 2006"
+  favicon = "favicon.svg"
+  feedlinks = true
+  icon = "favicon.svg"
+  image = "images/avatar.jpg"
+  imageMaxWidth = 400
+  logoWidth = 48
+  logoHeight = 48
+  mainSections = []
+  blogSections = ["blog"]
+  math = true
+  menuInHeader = true
+  mobileMenu = true
+  poweredby = false
+  searchLimit = 20
+  sidebar = false
+  submitted = true
+  themeColor = "#1a3a5c"
+
+  [params.author]
+    name = "Xudong Pan"
+    url = "https://ravensanstete.github.io/"
+    avatar = "images/avatar.jpg"
+
+  [params.umami]
+    siteID = "1b48d490-8ad7-42a6-a886-953ef8a2b3f1"
+    trackerURL = "https://cloud.umami.is"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  [[menus.main]]
+    name = "Publications"
+    pageRef = "/publications/"
+    weight = 20
+  [[menus.main]]
+    name = "Blog"
+    pageRef = "/blog/"
+    weight = 30
+  [[menus.main]]
+    name = "Search"
+    pageRef = "/search/"
+    weight = 40
