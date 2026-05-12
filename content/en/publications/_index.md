@@ -17,7 +17,7 @@ For a complete and up-to-date list, please visit my [Google Scholar profile](htt
 
 - _[CCS'26]_ Wenqi Zhang, Yulin Shen, Changyue Jiang, Jiarun Dai, Geng Hong, **Xudong Pan** (Corresponding). MirrorGuard: Toward Secure Computer-Use Agents via Simulation-to-Real Reasoning Correction. ACM CCS, 2026. (Accepted) [Link](https://arxiv.org/abs/2601.12822)
 
-- _[USENIX Security'26]_ Jiaqi Luo, Jiarun Dai, Fengyu Liu, Songyang Peng, Youkun Shi, Tong Bu, Geng Hong, **Xudong Pan**, Yuan Zhang (*Corresponding Author). Autonomy Comes with Costs: Detecting Denial-of-Service Vulnerabilities Caused by Resource Abusing in LLM-based Agents. The 35th USENIX Security Symposium, 2026. [Link](https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_luo.pdf)
+- _[USENIX Security'26]_ Jiaqi Luo, Jiarun Dai, Fengyu Liu, Songyang Peng, Youkun Shi, Tong Bu, Geng Hong, **Xudong Pan**, Yuan Zhang. Autonomy Comes with Costs: Detecting Denial-of-Service Vulnerabilities Caused by Resource Abusing in LLM-based Agents. The 35th USENIX Security Symposium, 2026. [Link](https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_luo.pdf)
 
 - _[WWW'26]_ Yang Feng, **Xudong Pan** (Corresponding). Struphantom: Evolutionary injection attacks on black-box tabular agents powered by large language models. ACM WWW, 2026. [Link](https://arxiv.org/abs/2504.09841)
 
