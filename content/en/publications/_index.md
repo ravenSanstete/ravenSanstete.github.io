@@ -9,23 +9,23 @@ For a complete and up-to-date list, please visit my [Google Scholar profile](htt
 
 - _[ICML'26]_ Isabella Duan, **Xudong Pan**, Yawen Duan, Adam Gleave, Ranjie Duan, Jianfeng Cao, Wenqi Chen, Yinpeng Dong, Jiarun Dai, Jie Fu, Xudong Guo, Tianxing He, Geng Hong, Naying Hu, Xiaojian Li, Dongrui Liu, Chaochao Lu, Sören Mindermann, Peng Xu, Yang Zhang, Chen Zheng, Brian Tse, Min Yang, Xia Hu. Position: Preparing for AI Systems That Deceive Developers. ICML, 2026. (Accepted) [Link](https://icml.cc/virtual/2026/poster/67051)
 
-- _[ICML'26]_ Yichen Wu, Qianqian Gao, **Xudong Pan** (Corresponding), Geng Hong, Min Yang. OpenDeception: Learning Deception and Trust in Human–AI Interaction via Multi-Agent Simulation. ICML, 2026. (Accepted) [Link](https://arxiv.org/abs/2504.09841)
+- _[ICML'26]_ Yichen Wu, Qianqian Gao, **Xudong Pan** (Corresponding), Geng Hong, Min Yang. OpenDeception: Learning Deception and Trust in Human–AI Interaction via Multi-Agent Simulation. ICML, 2026. (Accepted) [Link](https://arxiv.org/abs/2504.13707)
 
-- _[ICML'26]_ Changyue Jiang, Wenqi Zhang, **Xudong Pan** (Corresponding), Geng Hong, Min Yang. Think Twice Before You Act: Enhancing Agent Behavioral Safety with Thought Correction. ICML, 2026. (Accepted) [Link](https://arxiv.org/abs/2504.13707)
+- _[ICML'26]_ Changyue Jiang, Wenqi Zhang, **Xudong Pan** (Corresponding), Geng Hong, Min Yang. Think Twice Before You Act: Enhancing Agent Behavioral Safety with Thought Correction. ICML, 2026. (Accepted) [Link](https://arxiv.org/abs/2505.11063)
 
-- _[ICML'26]_ Changyi Li, Peng Lu, **Xudong Pan** (Corresponding), Fazl Barez, Min Yang. AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation. ICML, 2026. (Accepted) [Link](https://arxiv.org/abs/2501.12210)
+- _[ICML'26]_ Changyi Li, Peng Lu, **Xudong Pan** (Corresponding), Fazl Barez, Min Yang. AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation. ICML, 2026. (Accepted) [Link](https://arxiv.org/abs/2603.07427)
 
-- _[CCS'26]_ Wenqi Zhang, Yulin Shen, Changyue Jiang, Jiarun Dai, Geng Hong, **Xudong Pan** (Corresponding). MirrorGuard: Toward Secure Computer-Use Agents via Simulation-to-Real Reasoning Correction. ACM CCS, 2026. (Accepted) [Link](https://arxiv.org/abs/2505.11063)
+- _[CCS'26]_ Wenqi Zhang, Yulin Shen, Changyue Jiang, Jiarun Dai, Geng Hong, **Xudong Pan** (Corresponding). MirrorGuard: Toward Secure Computer-Use Agents via Simulation-to-Real Reasoning Correction. ACM CCS, 2026. (Accepted) [Link](https://arxiv.org/abs/2601.12822)
 
 - _[USENIX Security'26]_ Jiaqi Luo, Jiarun Dai, Fengyu Liu, Songyang Peng, Youkun Shi, Tong Bu, Geng Hong, **Xudong Pan**, Yuan Zhang (*Corresponding Author). Autonomy Comes with Costs: Detecting Denial-of-Service Vulnerabilities Caused by Resource Abusing in LLM-based Agents. The 35th USENIX Security Symposium, 2026. [Link](https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_luo.pdf)
 
-- _[WWW'26]_ Yihe Fan, **Xudong Pan** (Corresponding). Struphantom: Evolutionary injection attacks on black-box tabular agents powered by large language models. ACM WWW, 2026. [Link](https://arxiv.org/abs/2601.12822)
+- _[WWW'26]_ Yang Feng, **Xudong Pan** (Corresponding). Struphantom: Evolutionary injection attacks on black-box tabular agents powered by large language models. ACM WWW, 2026. [Link](https://arxiv.org/abs/2504.09841)
 
-- _[ICLR'26]_ Xinyi Wu, Geng Hong, Pei Chen, Yueyue Chen, **Xudong Pan**, Min Yang. PRISON: Unmasking the Criminal Potential of Large Language Models. ICLR, 2026. [Link](https://arxiv.org/abs/2603.07427)
+- _[ICLR'26]_ Xinyi Wu, Geng Hong, Pei Chen, Yueyue Chen, **Xudong Pan**, Min Yang. PRISON: Unmasking the Criminal Potential of Large Language Models. ICLR, 2026. [Link](https://arxiv.org/abs/2506.16150)
 
 ## 2025
 
-- _[WWW'25]_ Wei Mai, Geng Hong, Peichen Chen, **Xudong Pan**, Bo Liu, Yuzhuo Zhang, Hongwei Duan, Min Yang. You Can't Eat Your Cake and Have It Too: The Performance Degradation of LLMs with Jailbreak Defense. Proceedings of the ACM on Web Conference 2025, P872-883. [Link](https://arxiv.org/abs/2506.16150)
+- _[WWW'25]_ Wei Mai, Geng Hong, Peichen Chen, **Xudong Pan**, Bo Liu, Yuzhuo Zhang, Hongwei Duan, Min Yang. You Can't Eat Your Cake and Have It Too: The Performance Degradation of LLMs with Jailbreak Defense. Proceedings of the ACM on Web Conference 2025, P872-883. [Link](https://arxiv.org/abs/2501.12210)
 
 - _[Preprint]_ **Xudong Pan**, Jiarun Dai, Yihe Fan, Min Yang. Frontier AI systems have surpassed the self-replicating red line. Arxiv. [Link](https://arxiv.org/abs/2412.12140)
 
