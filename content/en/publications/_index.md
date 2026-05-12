@@ -21,7 +21,7 @@ For a complete and up-to-date list, please visit my [Google Scholar profile](htt
 
 - _[WWW'26]_ Yihe Fan, **Xudong Pan** (Corresponding). Struphantom: Evolutionary injection attacks on black-box tabular agents powered by large language models. ACM WWW, 2026. [Link](https://arxiv.org/abs/2601.12822)
 
-- _[ICLR'26]_ Yichen Wu, Geng Hong, Peichen Chen, Yiru Chen, **Xudong Pan**, Min Yang. Prison: Unmasking the criminal potential of large language models. ICLR, 2026. [Link](https://arxiv.org/abs/2603.07427)
+- _[ICLR'26]_ Xinyi Wu, Geng Hong, Pei Chen, Yueyue Chen, **Xudong Pan**, Min Yang. PRISON: Unmasking the Criminal Potential of Large Language Models. ICLR, 2026. [Link](https://arxiv.org/abs/2603.07427)
 
 ## 2025
 
@@ -29,7 +29,7 @@ For a complete and up-to-date list, please visit my [Google Scholar profile](htt
 
 - _[Preprint]_ **Xudong Pan**, Jiarun Dai, Yihe Fan, Min Yang. Frontier AI systems have surpassed the self-replicating red line. Arxiv. [Link](https://arxiv.org/abs/2412.12140)
 
-- _[Preprint]_ Changyue Jiang, **Xudong Pan**, Geng Hong, Chenfu Bao, Min Yang. RAG-Thief: Scalable Extraction of Private Data from Retrieval-Augmented Generation Applications with Agent-based Attacks. Arxiv. [Link](https://arxiv.org/abs/2411.14110)
+- _[Preprint]_ Changyue Jiang, **Xudong Pan**, Geng Hong, Chenfu Bao, Min Yang. RAG-Thief: Scalable Extraction of Private Data from Retrieval-Augmented Generation Applications with Agent-based Attacks.
 
 - _[Preprint]_ Yihe Fan, Wenqi Zhang, **Xudong Pan**, Min Yang. Evaluation Faking: Unveiling Observer Effects in Safety Evaluation of Frontier AI Systems. Arxiv. [Link](https://arxiv.org/abs/2505.17815)
 
