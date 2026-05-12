@@ -25,7 +25,7 @@ For a complete and up-to-date list, please visit my [Google Scholar profile](htt
 
 ## 2025
 
-- _[WWW'25]_ Wei Mai, Geng Hong, Peichen Chen, **Xudong Pan**, Bo Liu, Yuzhuo Zhang, Hongwei Duan, Min Yang. You Can't Eat Your Cake and Have It Too: The Performance Degradation of LLMs with Jailbreak Defense. Proceedings of the ACM on Web Conference 2025, P872-883. [Link](https://arxiv.org/abs/2501.12210)
+- _[WWW'25]_ Wuyuao Mai, Geng Hong, Peichen Chen, **Xudong Pan**, Bo Liu, Yuzhuo Zhang, Hongwei Duan, Min Yang. You Can't Eat Your Cake and Have It Too: The Performance Degradation of LLMs with Jailbreak Defense. Proceedings of the ACM on Web Conference 2025, P872-883. [Link](https://arxiv.org/abs/2501.12210)
 
 - _[Preprint]_ **Xudong Pan**, Jiarun Dai, Yihe Fan, Min Yang. Frontier AI systems have surpassed the self-replicating red line. Arxiv. [Link](https://arxiv.org/abs/2412.12140)
 
