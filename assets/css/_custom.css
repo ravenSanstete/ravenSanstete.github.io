@@ -51,6 +51,25 @@
   border-bottom: 2px solid var(--color-brand-light);
 }
 
+/* === Navbar: Text-only, no background === */
+.main-menu a {
+  background-color: transparent;
+  color: var(--color-link);
+  padding: 2px 4px;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background-color: transparent;
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.main-menu a[aria-current] {
+  font-weight: 600;
+  text-decoration: none;
+}
+
 /* === Responsive Profile Layout === */
 @media (max-width: 600px) {
   .profile-header {

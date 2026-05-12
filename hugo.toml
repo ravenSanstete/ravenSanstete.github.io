@@ -1,12 +1,19 @@
 baseURL = "https://ravensanstete.github.io/"
 title = "Xudong Pan"
 theme = "github.com/frjo/hugo-theme-zen/v6"
-locale = "en-US"
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 pluralizelisttitles = false
 removePathAccents = true
 rssLimit = 20
 copyright = "© 2024 Xudong Pan. All rights reserved."
+
+[languages]
+  [languages.en]
+    locale = "en-US"
+    label = "English"
+    contentDir = "content/en"
+    weight = 10
 
 [pagination]
   pagerSize = 10
